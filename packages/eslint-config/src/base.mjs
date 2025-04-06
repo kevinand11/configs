@@ -69,16 +69,13 @@ const configs = [
 		languageOptions: {
 			parser: tsEslint.parser,
 			parserOptions: {
-				project: true,
-				projectService: true,
-			},
-			globals: {
-				...globals['shared-node-browser'],
+				project: false,
+				projectService: false,
 			},
 		},
 		rules: {
-			'@typescript-eslint/consistent-type-imports': 'error',
-			'@typescript-eslint/consistent-type-exports': 'error',
+			// '@typescript-eslint/consistent-type-imports': 'error',
+			// '@typescript-eslint/consistent-type-exports': 'error',
 			'@typescript-eslint/no-unused-vars': [
 				'error',
 				{
@@ -94,6 +91,12 @@ const configs = [
 		},
 	},
 	{
+		languageOptions: {
+			globals: {
+				...globals.node,
+				...globals.browser,
+			},
+		},
 		rules: {
 			'no-console': 'warn',
 			'no-debugger': 'error',
