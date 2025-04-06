@@ -1,10 +1,13 @@
 {
 	"name": "@k11/eslint-config",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Eslint configuration",
 	"main": "index.mjs",
 	"author": "Kevin Izuchukwu",
 	"license": "ISC",
+	"scripts": {
+		"inspect": "config-inspector --config index.mjs"
+	},
 	"repository": {
 		"url": "git://github.com/kevinand11/linting.git"
 	},
