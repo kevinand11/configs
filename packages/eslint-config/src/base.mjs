@@ -7,6 +7,7 @@ import tsEslint from 'typescript-eslint'
 
 import { addIgnores } from './utils.mjs'
 
+const jsFiles = ['*.js', '**/*.js']
 const tsFiles = ['*.ts', '**/*.ts']
 
 /** @type {import('eslint').Linter.Config[]} */
@@ -64,9 +65,16 @@ const configs = [
 		}
 	},
 	{
+		files: jsFiles,
+		languageOptions: {
+			ecmaVersion: 'latest',
+		}
+	},
+	{
 		files: tsFiles,
 		plugins: { '@typescript-eslint': tsEslint.plugin },
 		languageOptions: {
+			ecmaVersion: 'latest',
 			parser: tsEslint.parser,
 			parserOptions: {
 				project: false,
