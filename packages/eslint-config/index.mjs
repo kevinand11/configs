@@ -51,6 +51,7 @@ export default [
       'stylistic/arrow-parens': ['error', 'always'],
       'stylistic/semi': ['error', 'never'],
       'stylistic/no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+      'ts/consistent-type-imports': 'error',
       'ts/no-unused-vars': [
         'error',
         {
