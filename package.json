@@ -1,0 +1,10 @@
+{
+  "name": "@k11/linting-mono",
+  "version": "0.0.0",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}
