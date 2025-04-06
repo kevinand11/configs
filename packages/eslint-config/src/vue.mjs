@@ -5,14 +5,17 @@ import {
 import vuePlugin from 'eslint-plugin-vue'
 
 import base from './base.mjs'
+import { addIgnores } from './utils.mjs'
+
+const vueFiles = ['*.vue', '**/*.vue']
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
+const configs = [
 	...base,
-	...defineConfigWithVueTs(vuePlugin.configs['flat/recommended'], vueTsConfigs.recommended),
+	...defineConfigWithVueTs(vuePlugin.configs['flat/recommended'], vueTsConfigs.recommended).map((config) => ({ ...config, files: [...(config.files ?? []), ...vueFiles] })),
 	{
+		files: vueFiles,
 		rules: {
-			'prettier/prettier': 'warn',
 			'vue/multi-word-component-names': 'off',
 			'vue/no-mutating-props': 'off',
 			'vue/no-v-html': 'off',
@@ -41,4 +44,9 @@ export default [
 			],
 		},
 	}
+]
+
+export default [
+	...base,
+	...configs.map(addIgnores),
 ]
