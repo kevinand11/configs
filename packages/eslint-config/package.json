@@ -2,11 +2,15 @@
 	"name": "@k11/eslint-config",
 	"version": "0.1.4",
 	"description": "Eslint configuration",
-	"main": "index.mjs",
+	"main": "src/base.mjs",
+	"exports": {
+		"./base": "./src/base.mjs",
+		"./vue": "./src/vue.mjs"
+	},
 	"author": "Kevin Izuchukwu",
 	"license": "ISC",
 	"scripts": {
-		"inspect": "config-inspector --config index.mjs"
+		"inspect": "config-inspector"
 	},
 	"repository": {
 		"url": "git://github.com/kevinand11/linting.git"
@@ -23,12 +27,14 @@
 		"@stylistic/eslint-plugin": "^4.2.0",
 		"@typescript-eslint/eslint-plugin": "^8.29.0",
 		"@typescript-eslint/parser": "^8.29.0",
+		"@vue/eslint-config-typescript": "^14.5.0",
 		"eslint": "^9.24.0",
 		"eslint-config-prettier": "^10.1.1",
 		"eslint-import-resolver-typescript": "^4.3.1",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-prettier": "^5.2.6",
 		"eslint-plugin-promise": "^7.2.1",
+		"eslint-plugin-vue": "^10.0.0",
 		"globals": "^16.0.0",
 		"prettier": "^3.5.3"
 	}
