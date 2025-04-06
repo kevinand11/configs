@@ -1,0 +1,20 @@
+{
+	"name": "@k11/ts-config",
+	"version": "0.1.0",
+	"description": "Typescript configuration",
+	"main": "index.json",
+	"author": "Kevin Izuchukwu",
+	"license": "ISC",
+	"repository": {
+		"url": "git://github.com/kevinand11/linting.git"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"exports": {
+		"./lib": "./tsconfig.lib.json",
+		"./vite": "./tsconfig.vite.json",
+		"./node": "./tsconfig.node.json"
+	}
+}

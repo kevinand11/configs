@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"removeComments": false,
+		"noImplicitAny": false,
+		"target": "ESNext",
+		"module": "ESNext",
+    	"verbatimModuleSyntax": true,
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"lib": ["ESNext", "ESNext.AsyncIterable"],
+		"esModuleInterop": true,
+		"allowJs": false,
+		"sourceMap": false,
+		"strict": true,
+		"noEmit": false,
+		"experimentalDecorators": true,
+	},
+}
