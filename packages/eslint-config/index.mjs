@@ -52,6 +52,7 @@ export default [
       'stylistic/semi': ['error', 'never'],
       'stylistic/no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
       'ts/consistent-type-imports': 'error',
+      'ts/consistent-type-exports': 'error',
       'ts/no-unused-vars': [
         'error',
         {
