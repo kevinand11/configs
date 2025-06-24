@@ -8,7 +8,7 @@
     "removeComments": false,
     "noImplicitAny": false,
     "target": "esnext",
-    "module": "esnext",
+    "module": "nodenext",
     "moduleResolution": "node16",
     "verbatimModuleSyntax": false,
     "resolveJsonModule": true,
