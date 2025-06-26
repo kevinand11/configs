@@ -16,7 +16,7 @@
     "allowJs": false,
     "sourceMap": false,
     "strict": true,
-    "noEmit": false,
+    "noEmit": true,
     "experimentalDecorators": true
   }
 }
